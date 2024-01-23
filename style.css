@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #002B36;
+    font-family: sans-serif;
+    color: white;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column ;
+    gap: 10px;
+}
+
+figure img{
+   object-fit: cover;
+   width: 700px;
+   height: 500px;
+   display: block;
+}
+#carosello{
+    position: relative;
+}
+
+.fa-arrow-right,
+.fa-arrow-left{
+    position: absolute;
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    transform: translateY(50%);
+    cursor: pointer;
+}
+
+.fa-arrow-right{
+    right: 10px;
+    top: 50%;
+}
+
+
+.fa-arrow-left{
+    left: 10px;
+    top: 50%;
+}
