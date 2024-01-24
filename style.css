@@ -19,15 +19,32 @@ main{
     gap: 10px;
 }
 
-figure img{
+.corrente img{
    object-fit: cover;
-   width: 700px;
-   height: 500px;
-   display: block;
+   width: 100%;
+   height: 100%;
 }
-#carosello{
+
+#carosello {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto; 
+}
+
+#carosello div{
     position: relative;
-}
+} 
+
+#carosello figure{
+    position: relative;
+} 
+
+#carosello figure div{
+    position: absolute;
+    bottom: 20px;
+    left: 5px;
+} 
+
 
 .fa-arrow-right,
 .fa-arrow-left{
@@ -38,6 +55,7 @@ figure img{
     padding: 5px;
     transform: translateY(50%);
     cursor: pointer;
+    z-index: 1;
 }
 
 .fa-arrow-right{
@@ -50,3 +68,42 @@ figure img{
     left: 10px;
     top: 50%;
 }
+
+/* figure img{ */
+    /* display: none; */
+/* } */
+/*  */
+/* .active{ */
+    /* display: block; */
+/* } */
+/*  */
+
+/* .thumbs{ */
+    /* display: flex; */
+    /* justify-content: center; */
+/*  */
+/* } */
+/*  */
+/* .thumbs .col{ */
+    /* flex-basis: calc(100% / 5); */
+/* } */
+/*  */
+/* .thumbs .col figure img{ */
+    /* width: 100%; */
+    /* height: 100%; */
+    /* object-fit: cover; */
+    /* display: block; */
+/*     */
+/* } */
+/*  */
+/* .thumbs .col figure { */
+    /* width: 100%; */
+    /* height: 100%; */
+    /* margin: 0; */
+    /* opacity: 0.3; */
+/*  */
+/* } */
+/*  */
+/* .thumbs .col figure:hover{ */
+    /* opacity: 1; */
+/* } */
